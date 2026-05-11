@@ -1,1 +1,130 @@
-﻿<html><head><title>Folo</title></head><body><h1>Folo App</h1><p>Investment tracking app.</p></body></html>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folo - Yatırım Takip Uygulaması</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero {
+      text-align: center;
+      padding: 80px 24px 40px;
+      max-width: 600px;
+    }
+    .logo {
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, #4F46E5, #7C3AED);
+      border-radius: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      margin: 0 auto 28px;
+      box-shadow: 0 12px 40px rgba(79, 70, 229, 0.4);
+    }
+    h1 {
+      font-size: 42px;
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 12px;
+    }
+    .tagline {
+      font-size: 18px;
+      color: rgba(255,255,255,0.7);
+      line-height: 1.6;
+      margin-bottom: 36px;
+    }
+    .features {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      max-width: 520px;
+      padding: 0 24px;
+      margin-bottom: 48px;
+    }
+    .feature {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+    }
+    .feature-icon { font-size: 28px; margin-bottom: 8px; }
+    .feature-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+    .feature-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+    .app-store-btn {
+      display: inline-block;
+      background: #fff;
+      color: #1a1a2e;
+      text-decoration: none;
+      padding: 14px 32px;
+      border-radius: 12px;
+      font-weight: 700;
+      font-size: 16px;
+      transition: transform 0.2s;
+      margin-bottom: 60px;
+    }
+    .app-store-btn:hover { transform: scale(1.05); }
+    footer {
+      padding: 24px;
+      color: rgba(255,255,255,0.3);
+      font-size: 12px;
+      text-align: center;
+    }
+    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    @media (max-width: 480px) {
+      .features { grid-template-columns: 1fr; }
+      h1 { font-size: 32px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <div class="logo">F</div>
+    <h1>Folo</h1>
+    <p class="tagline">BIST, TEFAS ve global piyasalardaki yatırımlarınızı tek uygulamadan takip edin. Portföy yönetimi, fiyat alarmları ve AI destekli analizler.</p>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <div class="feature-title">Portföy Takibi</div>
+      <div class="feature-desc">Hisse, fon ve global varlıklarınızı anlık takip edin</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔔</div>
+      <div class="feature-title">Fiyat Alarmları</div>
+      <div class="feature-desc">Hedef fiyata ulaşınca anında bildirim alın</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🤖</div>
+      <div class="feature-title">AI Sinyalleri</div>
+      <div class="feature-desc">Yapay zeka destekli al/sat önerileri</div>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📈</div>
+      <div class="feature-title">Grafikler</div>
+      <div class="feature-desc">BIST, TEFAS ve global hisseler için detaylı grafikler</div>
+    </div>
+  </div>
+
+  <a class="app-store-btn" href="https://apps.apple.com/app/folo/id6746498581">App Store'dan İndir</a>
+
+  <footer>
+    <p>&copy; 2026 Ahmet Mert Ordu. Tüm hakları saklıdır.</p>
+    <p style="margin-top: 8px;">
+      <a href="mailto:ahmetmertordu@gmail.com">İletişim</a>
+    </p>
+  </footer>
+</body>
+</html>

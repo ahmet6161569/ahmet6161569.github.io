@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Folo - Yatırım Takip Uygulaması</title>
+  <title>Folo - Yatırım Takip Uygulaması & Destek</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
@@ -48,12 +48,12 @@
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 16px;
-      max-width: 520px;
+      max-width: 680px;
       padding: 0 24px;
-      margin-bottom: 48px;
+      margin-bottom: 40px;
     }
     .feature {
-      background: rgba(255,255,255,0.08);
+      background: rgba(255,255,255,0.05);
       border: 1px solid rgba(255,255,255,0.1);
       border-radius: 16px;
       padding: 20px;
@@ -62,6 +62,7 @@
     .feature-icon { font-size: 28px; margin-bottom: 8px; }
     .feature-title { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
     .feature-desc { font-size: 12px; color: rgba(255,255,255,0.5); line-height: 1.4; }
+    
     .app-store-btn {
       display: inline-block;
       background: #fff;
@@ -75,13 +76,58 @@
       margin-bottom: 60px;
     }
     .app-store-btn:hover { transform: scale(1.05); }
-    footer {
+
+    /* Destek ve SSS Bölümü Alanları */
+    .support-container {
+      max-width: 680px;
+      width: 100%;
+      padding: 0 24px;
+      margin-bottom: 60px;
+    }
+    .section-title {
+      font-size: 24px;
+      color: #7C6FF7;
+      margin: 40px 0 16px;
+      text-align: left;
+    }
+    .card {
+      background: rgba(26, 26, 46, 0.6);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 12px;
       padding: 24px;
+      margin-bottom: 16px;
+    }
+    .card h2 { color: #fff; font-size: 18px; margin-bottom: 12px; }
+    .card h3 { color: #ccc; font-size: 15px; margin: 16px 0 6px; }
+    .card p, .card li { color: #bbb; font-size: 14px; line-height: 1.6; margin-bottom: 8px; }
+    .card ul { padding-left: 20px; }
+    
+    .email-box {
+      display: inline-block;
+      background: #7C6FF7;
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 12px;
+      font-size: 14px;
+    }
+    .email-box:hover { background: #695ae0; }
+    
+    hr { border: none; border-top: 1px solid rgba(255,255,255,0.1); margin: 40px 0; }
+    
+    footer {
+      padding: 40px 24px;
       color: rgba(255,255,255,0.3);
       font-size: 12px;
       text-align: center;
+      width: 100%;
+      background: rgba(0,0,0,0.2);
     }
-    footer a { color: rgba(255,255,255,0.4); text-decoration: none; }
+    footer a { color: #7C6FF7; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    
     @media (max-width: 480px) {
       .features { grid-template-columns: 1fr; }
       h1 { font-size: 32px; }
@@ -89,12 +135,15 @@
   </style>
 </head>
 <body>
+
+  <!-- Hero Başlık Bölümü -->
   <div class="hero">
     <div class="logo">F</div>
     <h1>Folo</h1>
-    <p class="tagline">BIST, TEFAS ve global piyasalardaki yatırımlarınızı tek uygulamadan takip edin. Portföy yönetimi, fiyat alarmları ve AI destekli analizler.</p>
+    <p class="tagline">BIST, TEFAS ve global piyasalardaki yatırımlarınızı tek uygulamadan takip edin. Portföy yönetimi, fiyat alarmları ve AI destekli grafik analiz araçları.</p>
   </div>
 
+  <!-- Özellikler Bölümü -->
   <div class="features">
     <div class="feature">
       <div class="feature-icon">📊</div>
@@ -108,23 +157,79 @@
     </div>
     <div class="feature">
       <div class="feature-icon">🤖</div>
-      <div class="feature-title">AI Sinyalleri</div>
-      <div class="feature-desc">Yapay zeka destekli al/sat önerileri</div>
+      <div class="feature-title">AI Grafik Yorumları</div>
+      <div class="feature-desc">Yapay zeka destekli teknik gösterge özetleri</div>
     </div>
     <div class="feature">
       <div class="feature-icon">📈</div>
-      <div class="feature-title">Grafikler</div>
-      <div class="feature-desc">BIST, TEFAS ve global hisseler için detaylı grafikler</div>
+      <div class="feature-title">Detaylı Grafikler</div>
+      <div class="feature-desc">BIST, TEFAS ve global hisseler için gelişmiş analiz araçları</div>
     </div>
   </div>
 
+  <!-- İndirme Butonu -->
   <a class="app-store-btn" href="https://apps.apple.com/app/folo/id6746498581">App Store'dan İndir</a>
 
+  <!-- Destek ve Kurumsal Bilgiler Bölümü -->
+  <div class="support-container">
+    <hr>
+    <h2 class="section-title">Uygulama Desteği & Bilgilendirme</h2>
+
+    <div class="card">
+      <h2>İletişim (Contact Us)</h2>
+      <p>Folo ile ilgili herhangi bir sorunuz, geri bildiriminiz veya destek talebiniz varsa bizimle doğrudan iletişime geçebilirsiniz:</p>
+      <a href="mailto:foloapp.info@gmail.com" class="email-box">foloapp.info@gmail.com</a>
+      <p style="margin-top: 16px; font-size: 12px; color: #777;">Genellikle 24-48 saat içinde dönüş sağlıyoruz.</p>
+    </div>
+
+    <div class="card">
+      <h2>Sıkça Sorulan Sorular (FAQ)</h2>
+      
+      <h3>Portföyüme nasıl varlık eklerim?</h3>
+      <p>Keşfet sekmesine gidin, takip etmek istediğiniz hisse veya fonu aratın ve "Portföye Ekle" butonunu kullanın.</p>
+      
+      <h3>Fiyat alarmını nasıl kurarım?</h3>
+      <p>Herhangi bir varlığın detay sayfasını açın ve "Alarm Kur" butonuna dokunun. Fiyat seviyeleri ve RSI göstergeleri için özel alarmlar tanımlayabilirsiniz.</p>
+      
+      <h3>Hesabımı ve verilerimi nasıl silebilirim?</h3>
+      <p>Profil sekmesine gidin ve en alttaki "Hesabı Sil" butonuna dokunun. Onay verdikten sonra portföyünüz, alarmlarınız ve tüm geçmiş işlemleriniz kalıcı olarak sistemlerimizden silinecektir.</p>
+      
+      <h3>Bu uygulama yatırım tavsiyesi içerir mi?</h3>
+      <p>Kesinlikle hayır. Folo yalnızca bilgilendirme ve portföy takip amacıyla tasarlanmıştır. Uygulama içindeki yapay zeka yorumları ve teknik göstergeler matematiksel modellere dayanır ve hiçbir şekilde yatırım danışmanlığı kapsamında değildir.</p>
+    </div>
+
+    <div class="card">
+      <h2>Hesap & Veri Güvenliği</h2>
+      <ul>
+        <li>Uygulamaya E-posta, Google veya Apple ID ile güvenli bir şekilde giriş yapabilirsiniz.</li>
+        <li>Kişisel ve finansal verileriniz asla üçüncü taraf şirketlerle paylaşılmaz veya satılmaz.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Folo Premium Aboneliği</h2>
+      <p>Folo Premium; sınırsız varlık takibi, sınırsız fiyat alarmı, gelişmiş AI yorumları ve tüm pazarlara kesintisiz erişim sağlar.</p>
+      <ul>
+        <li>Abonelik ödemeleri Apple ID veya Google Play hesabınız üzerinden tahsil edilir.</li>
+        <li>Abonelik, dönem bitiminden en az 24 saat önce iptal edilmediği sürece otomatik olarak yenilenir.</li>
+        <li>Aboneliklerinizi dilediğiniz an cihazınızın Ayarlar kısmından yönetebilir veya iptal edebilirsiniz.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Gizlilik Politikası (Privacy Policy)</h2>
+      <p>Detaylı metin için <a href="https://gist.github.com/ahmet6161569/1b9098c4990e1f4e8d2a29a9421fdfba" target="_blank">Privacy Policy & Terms of Use</a> sayfamızı ziyaret edebilirsiniz.</p>
+    </div>
+  </div>
+
+  <!-- Footer Bölümü -->
   <footer>
     <p>&copy; 2026 Ahmet Mert Ordu. Tüm hakları saklıdır.</p>
     <p style="margin-top: 8px;">
-      <a href="mailto:ahmetmertordu@gmail.com">İletişim</a>
+      <a href="mailto:foloapp.info@gmail.com">Destek Hattı</a> | 
+      <a href="https://gist.github.com/ahmet6161569/1b9098c4990e1f4e8d2a29a9421fdfba" target="_blank">Gizlilik Sözleşmesi</a>
     </p>
   </footer>
+
 </body>
 </html>
